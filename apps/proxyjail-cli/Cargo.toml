@@ -1,0 +1,13 @@
+[package]
+name = "proxyjail-cli"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+ebpf = ["dep:proxyjail-ebpf", "proxyjail-ebpf/libbpf"]
+
+[dependencies]
+proxyjail-core = { path = "../../crates/proxyjail-core" }
+proxyjail-runtime = { path = "../../crates/proxyjail-runtime" }
+proxyjail-ebpf = { path = "../../crates/proxyjail-ebpf", optional = true }

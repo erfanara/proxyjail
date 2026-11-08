@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/proxyjail-core",
+    "crates/proxyjail-ebpf",
+    "crates/proxyjail-runtime",
+    "apps/proxyjail-cli",
+]

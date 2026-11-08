@@ -1,0 +1,17 @@
+[package]
+name = "proxyjail-ebpf"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+default = []
+# Enable the libbpf loader after placing the generated redirect skeleton at
+libbpf = ["dep:anyhow", "dep:libbpf-rs"]
+
+[dependencies]
+proxyjail-core = { path = "../proxyjail-core" }
+anyhow = { version = "1", optional = true }
+libbpf-rs = { version = "0.27.2", optional = true }
+
+[build-dependencies]
+libbpf-cargo = "0.27.2"
