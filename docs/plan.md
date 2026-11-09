@@ -14,4 +14,5 @@
 
 # proxyjail-cli
 - [ ] cli standards (flags, logging, ...)
-
+- [ ] cicd
+- [ ] packaging
